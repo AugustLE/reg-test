@@ -1,0 +1,110 @@
+body {
+
+    background-color: rgba(138, 172, 255, 0.17);
+    opacity: 0.8;
+    margin-left: 50px;
+    margin-right: 50px;
+
+
+}
+
+.content_div {
+
+    box-shadow: 1px 1px 1px #888888;
+    background-color: antiquewhite;
+    border-radius: 10px;
+
+}
+
+#main_navbar {
+
+    margin-top: 20px;
+    border-bottom-color: #7aa2a5;
+    box-shadow: 1px 1px 1px #888888;
+    background-color: antiquewhite;
+    border-radius: 10px;
+
+}
+
+.navbar-nav a {
+
+    border-radius: 10px;
+
+}
+
+.active {
+
+    /*background-color: #bab39d;*/
+    background-color: rgba(41, 103, 175, 0.81); /* Add a green color to the "active/current" link */
+    color: white;
+
+
+}
+
+.notActive {
+
+    color: transparent;
+}
+
+.activeText {
+
+    color: #ba4823;
+}
+
+#company_header {
+
+    /*border-right-color: #7aa2a5;
+    border-right-style: solid;
+    border-width: thin;*/
+}
+
+
+#treatment_content_div {
+
+    border-radius: 10px;
+    width: 78%;
+    float: left;
+
+    box-shadow: 1px 1px 1px #888888;
+    background-color: antiquewhite;
+
+}
+
+#treatment_space {
+
+    width: 2%;
+    float: left;
+    height: 1px;
+}
+
+.vertical_menu {
+
+    border-radius: 10px;
+    width: 20%;
+    float: left;
+    box-shadow: 1px 1px 1px #888888;
+    background-color: #eee;
+    min-width: 100px;
+}
+
+.vertical_menu a {
+
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.vertical_menu a:hover {
+
+    background-color: #ccc;
+}
+
+.vertical_menu a.active {
+
+    background-color: #2967af; /* Add a green color to the "active/current" link */
+    color: white;
+}

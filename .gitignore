@@ -15,3 +15,6 @@ tests/report/
 reguleringenv
 regulering/*.pyc
 .idea
+
+home/migrations/
+__init__.py
