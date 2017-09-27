@@ -1,16 +1,6 @@
 from django.views import generic
-from django.shortcuts import render, redirect
 from .models import Visitation
-from django.contrib.auth import authenticate, login
-from django.views.generic import View
-from django.contrib.auth import get_user_model
-from django.contrib.auth import logout
-from django.core.mail import send_mail
-from django.http import HttpResponse
-from django.conf import settings
-import webbrowser
 from django.core.urlresolvers import resolve
-from . import urls
 import datetime
 
 url_names = ['index', 'treatment', 'voksne', 'prices', 'about', 'contact', 'fastsittende', 'retensjon', 'ganeplate', 'nattboyle', 'vekstplate']
