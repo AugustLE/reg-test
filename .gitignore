@@ -16,5 +16,4 @@ reguleringenv
 regulering/*.pyc
 .idea
 
-home/migrations/
-__init__.py
+home/migrations/00*
