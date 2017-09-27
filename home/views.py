@@ -14,7 +14,7 @@ from . import urls
 import datetime
 
 url_names = ['index', 'treatment', 'voksne', 'prices', 'about', 'contact', 'fastsittende', 'retensjon', 'ganeplate', 'nattboyle', 'vekstplate']
-visitation_names = ['Home', 'Behandling', 'Voksne', 'Priser', 'Om Oss', 'Kontakt', 'Fastsittende', 'Retensjon', 'Ganeplate', 'Nattbøyle', 'Vekstplate']
+visitation_names = ['Home', 'Behandling', 'Voksne', 'Priser', 'Om Oss', 'Kontakt', 'Fastsittende', 'Retensjon', 'Ganeplate', 'Nattboyle', 'Vekstplate']
 
 def newVisitation(page_name):
 
