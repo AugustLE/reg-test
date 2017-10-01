@@ -17,3 +17,5 @@ regulering/*.pyc
 .idea
 
 home/migrations/00*
+
+.DS_Store
