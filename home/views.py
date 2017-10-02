@@ -5,6 +5,7 @@ import datetime
 
 url_names = ['index', 'treatment', 'voksne', 'prices', 'about', 'contact', 'fastsittende', 'retensjon', 'ganeplate', 'nattboyle', 'vekstplate']
 visitation_names = ['Home', 'Behandling', 'Voksne', 'Priser', 'Om Oss', 'Kontakt', 'Fastsittende', 'Retensjon', 'Ganeplate', 'Nattboyle', 'Vekstplate']
+headers = ['Reguleringstannlegene', 'Behandling', 'Voksne', 'Priser', 'Om oss', 'Kontakt']
 
 def newVisitation(page_name):
 
@@ -16,12 +17,14 @@ class IndexView(generic.ListView):
     model = Visitation
     template_name = 'home/index.html'
 
+    id = 5
     context_object_name = 'query_set'
 
     def get_queryset(self):
-        print(resolve(self.request.path_info).url_name)
-        newVisitation(visitation_names[url_names.index(resolve(self.request.path_info).url_name)])
-        return Visitation.objects
+
+        #newVisitation(visitation_names[url_names.index(resolve(self.request.path_info).url_name)])
+        #return Visitation.objects
+        return [headers[url_names.index(resolve(self.request.path_info).url_name)]]
 
 class TreatmentView(IndexView):
 
@@ -33,6 +36,7 @@ class VoksneView(IndexView):
 
     template_name = 'home/voksne.html'
     id = 1
+
 
 class PriceView(IndexView):
 
@@ -50,29 +54,4 @@ class ContactView(IndexView):
 
     template_name = 'home/contact.html'
     id = 4
-
-class FastSittendeView(IndexView):
-
-    template_name = 'home/fastsittende.html'
-    id = 5
-
-class RetensjonView(IndexView):
-
-    template_name = 'home/retensjon.html'
-    id = 6
-
-class GaneplateView(IndexView):
-
-    template_name = 'home/ganeplate.html'
-    id = 7
-
-class NattboyleView(IndexView):
-
-    template_name = 'home/nattboyle.html'
-    id = 8
-
-class VekstPlateView(IndexView):
-
-    template_name = 'home/vekstplate.html'
-    id = 9
 

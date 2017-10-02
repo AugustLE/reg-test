@@ -67,6 +67,8 @@
 
 
 .treatment_content_div {
+
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -77,4 +79,47 @@
 .treatment_content_div div {
 
     width: 20%;
+    border-radius: 8px;
+    margin-right: 0.5%;
+    margin-left: 0.5%;
+    box-shadow: 2px 2px 5px -2px #000000;
+    min-width: 350px;
 }
+
+.treatment_content_div div:hover {
+
+    box-shadow: 2px 2px 8px -2px #000000;
+
+}
+
+.treatment_content_div div h4 {
+
+    display: flex;
+    justify-content: center;
+    opacity: 0.8;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    /*flex-direction: column;*/
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.treatment_content_div div span {
+
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    opacity: 0.8;
+    font-size: 45px;
+}
+
+
+
+
+
+
+
+
+
