@@ -4,48 +4,237 @@
 
         {% include 'home/top_image_container.html' %}
 
-        {% if view.id == 0 %}
 
-            <div class="treatment_content_div">
 
-                <div>
+        <div class="treatment_menu_div">
 
-                    <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-                    <h4>Generell praktisk info</h4>
+            <div class="treatment_menu_item" onclick="clickItem(0)" id="info_button">
 
-                </div>
-
-                <div>
-                     <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>
-                     <h4>Fastsittende regulering</h4>
-                </div>
-
-                <div>
-                     <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
-                     <h4>Retensjon</h4>
-                </div>
-
-                <div>
-                    <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-                     <h4>Ganeplate</h4>
-                 </div>
-
-                <div>
-                    <span class="glyphicon glyphicon-magnet" aria-hidden="true"></span>
-                     <h4>Nattbøyle</h4>
-                </div>
-
-                <div>
-                    <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-                     <h4>Vekstplate</h4>
-                </div>
-
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                <h4>Generell praktisk info</h4>
 
             </div>
 
-        {% endif %}
+            <div class="treatment_menu_item" onclick="clickItem(1)" id="fast_button">
+                 <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>
+                 <h4>Fastsittende regulering</h4>
+            </div>
 
-    </div>
+            <div class="treatment_menu_item" onclick="clickItem(2)" id="ret_button">
+                 <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
+                 <h4>Retensjon</h4>
+            </div>
+
+            <div class="treatment_menu_item" onclick="clickItem(3)" id="gane_button">
+                <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                 <h4>Ganeplate</h4>
+             </div>
+
+            <div class="treatment_menu_item" onclick="clickItem(4)" id="natt_button">
+                <span class="glyphicon glyphicon-magnet" aria-hidden="true"></span>
+                 <h4>Nattbøyle</h4>
+            </div>
+
+            <div class="treatment_menu_item" onclick="clickItem(5)" id="vekst_button">
+                <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                 <h4>Vekstplate</h4>
+            </div>
+
+        </div>
+
+        <br/>
+        <hr style="width: 95%">
+
+        <div id="treatment_content_div">
+
+            <div class="content_item" id="gen_info_div">
+
+                <h1>Behandling</h1>
+
+                <h3>Reguleringstannlegene på Stabekk tilbyr <br> det nyeste innen
+                    kjeveortopedi for barn, ungdom og voksne.<br>
+                    Vi tar imot nye pasienter og har kort ventetid.
+                </h3>
+                <hr style="width: 95%">
+                <br>
+
+                <div class="content_inner_elements">
+                    <h3>FØRSTE BESØK</h3>
+                    <hr style="width: 70%">
+                    <div id="exception_fb">
+
+                        <div>
+
+                            <p>Ved første besøk vil behovet for tannregulering bli vurdert og diskutert.
+                                Noen bittfeil kan behandles med løse plater (gommer) mens andre må behandles
+                                med apparatur som festes til tennene (vanlig eller usynlig regulering).
+                                Vi tilbyr det nyeste og beste innen tannregulering og vil anbefale det som er best egnet for hver enkelt pasient.
+                                Vi foreslår en behandlingsplan basert på tidsbruk, behandlingstid og dine ønsker og gir en omtrentlig kostnad.
+                                Når vi er enige og behandlingsplanen er klar begynner vi.
+
+                            </p>
+                        </div>
+
+                        <div>
+
+                            <p> Det er viktig at pasienten møter til oppsatte timer. Tiden mellom hver kontroll
+                                er ikke tilfeldig. Vi gjør oppmerksom på at det er svært vanskelig å gjøre om timeavtaler
+                                på kort varsel, da alle som er under behandling har fått sine timer tilpasset sitt behandlingsopplegg
+                                lang tid i forveien. Forsøk derfor å møte til den timen du har fått.
+                                Behandlingsresultatet avhenger av jevnlig oppmøte. Ikke møtt timer blir belastet.
+                                Vi prøver å holde oppsatte timeavtaler, men det hender vi er forsinket.
+                            </p>
+
+                        </div>
+
+                        <div>
+                            <p>
+                                Dersom samarbeidet svikter kan dette føre til:
+                            </p>
+
+                            <p><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Lengre behandlingstid</p>
+                            <p><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Dårligere resultat</p>
+                            <p><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Større kostnader</p>
+                            <p><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Flere tannlegebesøk</p>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>AKUTTHJELP</h3>
+                        <hr>
+                        <p>I løpet av behandlingstiden vil de fleste ha behov for hjelp utenom oppsatte timer.
+                            Dersom noe stikker eller går i stykker, ber vi dere om å ta kontakt.
+                            Ved behandligsstart er det vanlig at klosser på reguleringen løsner.
+                            Det er også vanlig å få mellomrom mellom tennene. Husk ALLTID å ringe før du kommer
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>RENHOLD</h3>
+                        <hr>
+                        <p>Regulering på tennene øker risikoen for hull og tannkjøttsbetennelse.
+                            Det er derfor svært viktig å holde tennene rene.
+                            Tenner og regulering MÅ børstes grundig morgen og kveld.
+                            Det er spesielt viktig å pusse ved overgang tann/tannkjøtt.
+                            Alle som har regulering MÅ bruke FLUOR. Vi anbefaler fluor skyllevæske.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>HVA KAN JEG SPISE?</h3>
+                        <hr>
+                        <p>
+                            Du kan spise vanlig mat, men bør ikke tygge harde ting som sukkertøy.
+                            Seige søtsaker som karameller, setter seg fast på reguleringen og er vanskelig å fjerne.
+                            Bit ikke på blyanter og harde gjenstander.Reguleringen løsner fort hvis du pirker i munnen med
+                            fingrene Regulering som løsner gjentatte ganger, vil forsinke behandlingen.
+                            Plate\gom og annet avtagbart apparatur, må passes godt på. Disse apparaturene er kostbare,
+                            og må erstattes av pasienten selv hvis de blir borte.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>BETALING</h3>
+                        <hr>
+                        <p>Dere får tilsendt fakturaer etterhvert som behandlingen går fremover.
+                            Det er viktig å merke pasientens navn og fakruranummer ved betaling.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>TENNER SOM HAR VÆRT UTSATT FOR SLAG</h3>
+                        <hr>
+                        <p>
+                            I noen tilfeller har tenner vært utsatt for slag.
+                            I noen tilfeller er disse tennene reparert med fylling.
+                            Hvis denne fyllingen skulle falle av under behandlingen,
+                            må den repareres av henvisende tannlege (skoletannlege).
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>FORHOLD SOM PÅVIRKER BEHANDLINGSRESULTAT</h3>
+                        <hr>
+                        <p>
+                            Stell av tenner og regulering: Dårlig tannpuss øker fare for hull og tannkjøtsbetennelse.
+                            Regelmessig besøk hos almennpraktiserende tannlege eventuelt tannpleier, er å anbefale.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>BRUK AV STRIKK OG BØYLE</h3>
+                        <hr>
+                        <p>
+                            Når kreftene fra strikker og bøyle virker over lengre tid, vil tennene flytte seg til ønsket posisjon.
+                            Resultatet avhenger av at apparaturet brukes som avtalt.
+                            IKKE DRA NATTBØYLEN UT MENS DEN ER FESTET TIL NAKKESTROPPEN, BØYLEN KAN SPRETTE TILBAKE OG GJØRE SKADE.
+                        </p>
+                    </div>
+
+                    <div id="exception_uf">
+                        <h3>UFORUTSIGBARE FAKTORER SOM KAN PÅVIRKE BEHANDLINGSRESULTATET</h3>
+                        <hr>
+                        <h4>Vekst:</h4>
+                        <p>
+                            Uvanlig vekst av kjeven kan vanskeliggjøre behandlingen.
+                            Dette kan føre til at tennene flytter på seg etter at regulerinegen er tatt av.
+                            I spesielle tilfeller kan senvekst av kjevene medføre kirurgi.
+                        </p>
+
+                        <br>
+                        <h4>Muskulære vaner:</h4>
+                        <p>
+                            Munnpusting, sugevaner, tungepress ved svelging, kan i noen tilfeller hindre tennene i å flytte seg til riktig plass.
+                            Det kan også medføre at tenner flytter seg tilbake når reguleringen fjernes.
+                        </p>
+
+
+
+                        <br>
+                        <h4>Skadede tenner:</h4>
+                        <p>
+                            En tann som har vært utsatt for skade, kan gradvis dø.
+                            Dersom det oppstår fargeforandring eller betennelse i tannen under behandling, blir rotfylling nødvendig.
+                        </p>
+
+
+
+
+                        <br>
+                        <h4>Rotforkortelse:</h4>
+                        <p>
+                            Hos de fleste pasienter kan man registere noe rotforkortelse som følge av reguleringen.
+                            I sjeldne tilfeller kan dette medføre at behandlingen må avbrytes.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="content_item" id="fast_div">
+                <h2>fast</h2>
+            </div>
+
+            <div class="content_item" id="ret_div">
+                <h2>ret</h2>
+            </div>
+
+            <div class="content_item" id="gane_div">
+                <h2>gane</h2>
+            </div>
+
+            <div class="content_item" id="natt_div">
+                <h2>nattt</h2>
+            </div>
+
+            <div class="content_item" id="vekst_div">
+                <h2>vekst</h2>
+            </div>
+
+        </div>
+
 
     {% block content %}
     {% endblock %}

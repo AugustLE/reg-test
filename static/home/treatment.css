@@ -59,14 +59,16 @@
 
 
 @media screen and (max-width: 760px) {
-  .treatment-content .vertical_menu_treatment, .treatment-content .treatment_content_div {
+  .treatment-content .vertical_menu_treatment, .treatment-content .treatment_menu_div {
     width: 100%;
     margin: 10px;
   }
 }
 
 
-.treatment_content_div {
+.treatment_menu_div {
+
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -74,7 +76,50 @@
     width: 100%;
 }
 
-.treatment_content_div div {
+.treatment_menu_div div {
 
     width: 20%;
+    border-radius: 8px;
+    margin-right: 0.5%;
+    margin-left: 0.5%;
+    box-shadow: 2px 2px 5px -2px #000000;
+    min-width: 350px;
 }
+
+.treatment_menu_div div:hover {
+
+    box-shadow: 2px 2px 8px -2px #000000;
+
+}
+
+.treatment_menu_div div h4 {
+
+    display: flex;
+    justify-content: center;
+    opacity: 0.8;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    /*flex-direction: column;*/
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.treatment_menu_div div span {
+
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    opacity: 0.8;
+    font-size: 45px;
+}
+
+
+
+
+
+
+
+
+

@@ -59,14 +59,14 @@
 
 
 @media screen and (max-width: 760px) {
-  .treatment-content .vertical_menu_treatment, .treatment-content .treatment_content_div {
+  .treatment-content .vertical_menu_treatment, .treatment-content .treatment_menu_div {
     width: 100%;
     margin: 10px;
   }
 }
 
 
-.treatment_content_div {
+.treatment_menu_div {
 
     margin-top: 20px;
     display: flex;
@@ -76,23 +76,28 @@
     width: 100%;
 }
 
-.treatment_content_div div {
+.treatment_menu_div div {
 
     width: 20%;
     border-radius: 8px;
     margin-right: 0.5%;
     margin-left: 0.5%;
-    box-shadow: 2px 2px 5px -2px #000000;
+    margin-top: 0.5%;
     min-width: 350px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 2px 2px 5px -2px #000000;
+    opacity: 1;
+
+
 }
 
-.treatment_content_div div:hover {
+.treatment_menu_div div:hover {
 
-    box-shadow: 2px 2px 8px -2px #000000;
-
+    box-shadow: 3px 3px 10px -2px #000000;
 }
 
-.treatment_content_div div h4 {
+.treatment_menu_div div h4 {
 
     display: flex;
     justify-content: center;
@@ -105,7 +110,7 @@
     padding-bottom: 10px;
 }
 
-.treatment_content_div div span {
+.treatment_menu_div div span {
 
     margin-top: 10px;
     display: flex;
@@ -115,6 +120,107 @@
     font-size: 45px;
 }
 
+
+#treatment_content_div {
+
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width:100%;
+    height: 100%;
+
+}
+
+#treatment_content_div .content_item {
+
+    width: 80%;
+
+
+}
+
+#treatment_content_div .content_item hr {
+
+    width: 80%;
+}
+
+#treatment_content_div .content_item h1, #treatment_content_div .content_item h2, #treatment_content_div .content_item h3,
+#treatment_content_div .content_item h4 {
+
+    display: flex;
+    justify-content: center;
+    opacity: 0.8;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    /*flex-direction: column;*/
+    text-align: center;
+}
+
+
+
+#treatment_content_div .content_item .content_inner_elements {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+#treatment_content_div .content_item .content_inner_elements div {
+
+    width: 40%;
+    margin: 5%;
+    min-width: 250px;
+
+}
+
+#treatment_content_div .content_item .content_inner_elements #exception_uf {
+
+    width: 70%;
+    margin: 5%;
+    min-width: 250px;
+
+}
+
+#treatment_content_div .content_item .content_inner_elements #exception_fb {
+
+    width: 80%;
+    margin: 5%;
+    margin-top: 0;
+    margin-bottom: 0;
+    min-width: 250px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#treatment_content_div .content_item .content_inner_elements #exception_fb div {
+
+    width: 40%;
+    margin: 5%;
+    margin-top: 0;
+}
+#treatment_content_div .content_item .content_inner_elements #exception_fb div p {
+
+    width: 90%;
+
+}
+
+#treatment_content_div .content_item .content_inner_elements div p {
+
+    display: flex;
+    justify-content: center;
+    opacity: 0.8;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    /*flex-direction: column;*/
+    /*text-align: center;*/
+}
 
 
 

@@ -26,8 +26,12 @@
     </div>
 
 
-    <h2>{{ query_set.0 }}</h2>
+    <h2 id="front_title">{{ query_set.0 }}</h2>
 
+    {% if view.id == 5 %}
+
+        <p id="front_subtitle">MNTF - SPESIALISTER I KJEVEORTOPEDI</p>
+    {% endif %}
 
     <img src="../../static/home/Background_3.png">
 
